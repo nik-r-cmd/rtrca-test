@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Custom animations for bubble and wiggle effects */
+@keyframes bubble {
+  0% { 
+    transform: scale(0.5) translateY(0);
+    opacity: 0.5;
+  }
+  50% { 
+    transform: scale(1) translateY(-100vh);
+    opacity: 0.7;
+  }
+  100% { 
+    transform: scale(1.2) translateY(-200vh);
+    opacity: 0;
+  }
+}
+
+@keyframes wiggle {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-5deg); }
+  75% { transform: rotate(5deg); }
+}
